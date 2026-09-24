@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Electrical Solutions - professional electrical wiring, maintenance, fault fixing, earthing, inverter and UPS services.">
+<title>Electrical Solutions | Professional Electrical Services</title>
+<style>
+:root{--y:#ffc400;--y2:#ffd83d;--bg:#05080b;--panel:#0c1218;--line:#27313a;--white:#f7f8fa;--muted:#aeb8c2;--green:#20c85a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--white);line-height:1.55}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(5,8,11,.92);backdrop-filter:blur(14px);border-bottom:1px solid #1c252d}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-size:18px;font-weight:900;letter-spacing:.4px}
+.brand em{font-style:normal;color:var(--y)}
+.logo{width:45px;height:45px;border:2px solid var(--y);border-radius:50%;display:grid;place-items:center;position:relative}
+.logo:after{content:"⚡";color:var(--y);font-size:28px;line-height:1}
+.links{display:flex;gap:30px;font-size:14px;color:#d9dee3}.links a:hover{color:var(--y)}
+.menu{display:none;background:none;border:0;color:white;font-size:32px}
+.hero{padding:145px 0 65px;min-height:790px;position:relative;overflow:hidden;background:
+linear-gradient(90deg,rgba(5,8,11,.98) 0%,rgba(5,8,11,.91) 37%,rgba(5,8,11,.45) 72%,rgba(5,8,11,.82) 100%),
+url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=85") center/cover}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:45px;min-height:520px}
+.kicker{color:var(--y);font-size:14px;font-weight:800;letter-spacing:2px;margin-bottom:16px}
+.kicker:before{content:"";display:inline-block;width:38px;height:4px;background:var(--y);vertical-align:middle;margin-right:14px;border-radius:4px}
+h1{font-size:clamp(48px,6vw,78px);line-height:.98;letter-spacing:-2px;margin-bottom:25px}
+h1 span{color:var(--y)}
+.lead{font-size:18px;color:#c0c8d0;max-width:610px;margin-bottom:28px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 25px;border-radius:11px;font-weight:800;border:1px solid #66717b;transition:.2s}
+.btn.primary{background:var(--y);color:#07090b;border-color:var(--y)}
+.btn:hover{transform:translateY(-2px)}.btn.secondary:hover{border-color:var(--y);color:var(--y)}
+.hero-spacer{min-height:400px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);margin-top:35px;border-top:1px solid #59636b33;padding-top:22px}
+.feature{text-align:center;border-right:1px solid #59636b55;padding:0 10px}
+.feature:last-child{border:0}.feature .ico{font-size:30px;color:var(--y);display:block;margin-bottom:5px}.feature b{display:block;font-size:14px}.feature small{color:#aab3bb}
+section{padding:90px 0}
+.services{background:#070c10}
+.heading{max-width:750px;margin-bottom:38px}.heading .kicker{margin-bottom:10px}.heading h2{font-size:42px;line-height:1.08;margin-bottom:12px}.heading h2 span{color:var(--y)}.heading p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:linear-gradient(145deg,#111921,#0b1116);border:1px solid #28333c;border-radius:19px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:#8d7400}
+.card-img{height:190px;background-size:cover;background-position:center;position:relative}
+.card-img:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,#080d11aa)}
+.card-icon{position:absolute;z-index:2;left:20px;bottom:-22px;width:54px;height:54px;border-radius:50%;background:var(--y);color:#111;display:grid;place-items:center;font-size:25px}
+.card-body{padding:32px 22px 24px}.card h3{font-size:22px;margin-bottom:12px}.card ul{list-style:none;color:#c0c8cf;display:grid;gap:7px;font-size:14px}.card li:before{content:"✓";color:var(--y);font-weight:900;margin-right:10px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about h2{font-size:42px;line-height:1.1;margin-bottom:16px}.about p{color:var(--muted)}
+.about-box{border:1px solid #28333c;border-radius:20px;padding:30px;background:#0d141a}
+.about-box h3{font-size:24px;margin-bottom:18px}.checks{display:grid;gap:14px}.checks div{display:flex;gap:12px}.checks b{color:var(--y)}
+.contact{background:linear-gradient(135deg,#121a20,#070a0d)}
+.contact-box{border:1px solid #303a42;border-radius:22px;padding:35px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.phone{font-size:32px;color:var(--y);font-weight:900;margin:6px 0}
+footer{padding:28px 0;text-align:center;color:#7f8992;border-top:1px solid #1e272e;font-size:13px}
+@media(max-width:800px){
+header{position:fixed}.links{display:none}.menu{display:block}
+.hero{padding-top:120px;min-height:0;background:linear-gradient(180deg,rgba(5,8,11,.78),rgba(5,8,11,.96)),url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=80") center/cover}
+.hero-grid{grid-template-columns:1fr;gap:20px}.hero-spacer{display:none}
+h1{font-size:51px}.lead{font-size:17px}
+.features{grid-template-columns:repeat(4,1fr);margin-top:42px}.feature{padding:0 4px}.feature .ico{font-size:25px}.feature b{font-size:12px}.feature small{font-size:10px}
+section{padding:70px 0}.heading h2,.about h2{font-size:34px}.cards{grid-template-columns:1fr}.card-img{height:175px}
+.about{grid-template-columns:1fr}.contact-box{flex-direction:column;align-items:flex-start}.phone{font-size:27px}
+}
+@media(max-width:430px){.wrap{width:90%}.brand{font-size:16px}.logo{width:42px;height:42px}.hero{padding-top:120px}h1{font-size:47px}.buttons .btn{width:100%}.features{gap:2px}.feature .ico{font-size:22px}.feature b{font-size:10px}.feature small{font-size:9px}.card-img{height:155px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a href="#home" class="brand"><div class="logo"></div><span>ELECTRICAL <em>SOLUTIONS</em></span></a>
+<div class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<button class="menu" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('show')">☰</button>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+<div class="hero-grid">
+<div>
+<div class="kicker">PROFESSIONAL ELECTRICAL SERVICES</div>
+<h1>POWERING<br>YOUR HOME<br><span>& BUSINESS</span></h1>
+<p class="lead">Reliable electrical solutions for wiring, maintenance, fault fixing, earthing, new installations, inverter and UPS systems.</p>
+<div class="buttons">
+<a class="btn primary" href="https://wa.me/916238525081?text=Hello%20Electrical%20Solutions%2C%20I%20need%20an%20electrical%20service." target="_blank">☏ WhatsApp Now →</a>
+<a class="btn secondary" href="#services">Our Services →</a>
+</div>
+</div>
+<div class="hero-spacer"></div>
+</div>
+<div class="features">
+<div class="feature"><span class="ico">🛡</span><b>Safe Work</b><small>Safety First</small></div>
+<div class="feature"><span class="ico">⚙</span><b>Expert Team</b><small>Practical Service</small></div>
+<div class="feature"><span class="ico">⚡</span><b>Quality Service</b><small>Reliable Work</small></div>
+<div class="feature"><span class="ico">♟</span><b>Customer Support</b><small>When Needed</small></div>
+</div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap">
+<div class="heading"><div class="kicker">OUR SERVICES</div><h2>Complete <span>Electrical</span> Solutions</h2><p>Professional and reliable electrical services for homes, offices and other properties.</p></div>
+<div class="cards">
+<article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=900&q=80')"><div class="card-icon">⌂</div></div><div class="card-body"><h3>Electrical Wiring</h3><ul><li>Residential & Commercial</li><li>New Installations</li><li>Renovation & Upgradation</li></ul></div></article>
+<article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=80')"><div class="card-icon">⚙</div></div><div class="card-body"><h3>Maintenance</h3><ul><li>Regular Maintenance</li><li>Inspection & Testing</li><li>Preventive Solutions</li></ul></div></article>
+<article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80')"><div class="card-icon">🔧</div></div><div class="card-body"><h3>Fault Fixing</h3><ul><li>Quick Troubleshooting</li><li>Short Circuit & Tripping</li><li>Power & Lighting Issues</li></ul></div></article>
+<article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1601312378427-822b2b41da35?auto=format&fit=crop&w=900&q=80')"><div class="card-icon">▣</div></div><div class="card-body"><h3>Inverter & UPS</h3><ul><li>Installation & Setup</li><li>AMC & Maintenance</li><li>Battery Replacement</li></ul></div></article>
+</div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+<div><div class="kicker">ABOUT ELECTRICAL SOLUTIONS</div><h2>Practical electrical work with a <span style="color:var(--y)">safety-first</span> approach.</h2><p>We provide electrical installation, maintenance and fault-fixing services with attention to safe workmanship, proper testing and dependable solutions.</p></div>
+<div class="about-box"><h3>What we focus on</h3><div class="checks"><div><b>✓</b> Safe and systematic electrical work</div><div><b>✓</b> Testing and troubleshooting</div><div><b>✓</b> Residential & commercial support</div><div><b>✓</b> Clear service communication</div></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap"><div class="contact-box">
+<div><div class="kicker">CALL / WHATSAPP</div><div class="phone">6238525081</div><p style="color:var(--muted)">For electrical service enquiries and bookings.</p></div>
+<a class="btn primary" href="https://wa.me/916238525081?text=Hello%20Electrical%20Solutions%2C%20I%20need%20an%20electrical%20service." target="_blank">💬 Message on WhatsApp</a>
+</div></div></section>
+</main>
+<footer>© <span id="year"></span> Electrical Solutions. All rights reserved.</footer>
+<script>
+const css=document.createElement('style');
+css.textContent='@media(max-width:800px){.links.show{display:flex;position:absolute;top:76px;left:0;right:0;background:#080c10;padding:20px;flex-direction:column;gap:18px;border-bottom:1px solid #27313a}}';
+document.head.appendChild(css);
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
